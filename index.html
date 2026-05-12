@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./IMG/Favicon.png">
+    <title>Escola Ativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/divStyle.css">
+</head>
+
+<body>
+
+    <header id="header-fixo" class="d-flex justify-content-between align-items-center">
+        <img class="img-fluid" src="./IMG/Logotipo.jpg" alt="logotipo do site">
+        <ul class="nav me-5">
+            <li class="nav-item">
+                <a href="#div-alunos" class="text-white text-decoration-none fs-5"><svg
+                        xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 5%;" width="22" height="22"
+                        fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path
+                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                    </svg> <span>Alunos</span> </a>
+            </li>
+            <li class="nav-item  ms-3 me-3">
+                <a href="#div-salas" class="text-white text-decoration-none fs-5"><svg
+                        xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 4%;" width="21" height="21"
+                        fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                    </svg> <span>Salas</span> </a>
+            </li>
+            <li class="nav-item">
+                <a href="#div-chamada" class="text-white text-decoration-none fs-5"><svg
+                        xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 5%;" width="19" height="19"
+                        fill="currentColor" class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
+                    </svg> <span>Chamada</span> </a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container-fluid p-0">
+
+        <!-- ALUNOS -->
+        <div id="div-alunos" class="row d-flex text-center py-5">
+
+            <div class="col-md-3 ms-4">
+                <div class="card shadow-sm p-3 mb-3">
+                    <h5>Cadastrar Alunos</h5>
+                    <input type="text" id="nomeAluno" class="form-control mb-2" placeholder="Nome do Aluno">
+                    <select class="form-select mb-2" id="selectSala">
+                        <option value="" selected disabled>Selecione uma sala</option>
+                    </select>
+                    <button class="btn btn-success w-100" onclick="cadastrarAlunos()">Cadastrar</button>
+                </div>
+                <div class="card shadow-sm p-3">
+                    <h5>Exportar Relatórios</h5>
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="exportarAlunos('json')">Alunos (JSON)</button>
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="exportarAlunos('csv')">Alunos (CSV)</button>
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="exportarPresencas('json')">Presenças (JSON)</button>
+                    <button class="btn btn-outline-primary w-100" onclick="exportarPresencas('csv')">Presenças (CSV)</button>
+                </div>
+            </div>
+            <div class="col-md-4 ms-5">
+                <div id="div-lista-alunos" class="card shadow-sm p-3 mb-3">
+                    <h5>Alunos</h5>
+                    <ul id="listaAlunosGeral" class="list-group"></ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="div-lista-alunos" class="card shadow-sm p-3 mb-3">
+                    <h5>Ranking dos Alunos</h5>
+                    <ul id="listaRankingAlunos" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+        <!-- FIM ALUNOS -->
+
+        <!-- SALAS -->
+        <div id="div-salas" class="row py-5 d-flex text-center">
+
+            <div class="col-md-3 ms-4">
+                <div class="card shadow-sm p-3">
+                    <h5>Criar Sala</h5>
+
+                    <input type="text" id="nomeSala" class="form-control mb-2" placeholder="Nome da sala">
+                    <select class="form-select invisible mb-2"></select>
+                    <button class="btn btn-primary w-100" onclick="criarSala()"> Criar </button>
+                </div>
+                <div class="card shadow-sm p-3 mt-3">
+                    <h5>Exportar Relatórios</h5>
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="exportarSalas('json')">Salas (JSON)</button>
+                    <button class="btn btn-outline-primary w-100" onclick="exportarSalas('csv')">Salas (CSV)</button>
+                </div>
+            </div>
+            <div class="col-md-4 ms-5">
+                <div id="div-lista-salas" class="card shadow-sm p-3 mb-3">
+                    <h5>Salas</h5>
+                    <ul id="listaSalas" class="list-group"></ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="div-lista-salas" class="card shadow-sm p-3 mb-3">
+                    <h5>Ranking das Salas</h5>
+                    <ul id="listaRankingSalas" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SALAS -->
+
+        <!-- CHAMADA -->
+        <div id="div-chamada" class="row py-5 d-flex justify-content-between text-center">
+
+            <div class="col-md-4 ms-4">
+                <div class="card shadow-sm p-3 mb-3">
+                    <h5 class="mb-3">Escolha a Data e a Sala</h5>
+                    <input type="date" id="dataChamada" class="input mb-2">
+                    <select class="form-select mb-2" id="filtroSala">
+                        <option value="" selected disabled>Selecione uma sala</option>
+                    </select>
+                    <button class="btn btn-dark w-100" onclick="carregarChamada()">Carregar</button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card shadow-sm p-3">
+                    <h5>Chamada</h5>
+                    <div id="chamada"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM CHAMADA -->
+
+        <div id="div-dashboard" class="row py-5 d-flex justify-content-around text-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm p-3">
+                    <h5>Relatório de Justificativas</h5>
+                    <div class="p-1">
+                        <select class="form-select mb-3" id="filtroSalaDashboard" onchange="renderizarJustificativas()">
+                            <option value="" selected disabled>Selecione a Sala</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-outline-primary w-100 mb-2" onclick="exportarJustificativas('json')">Exportar Justificativas (JSON)</button>
+                        <button class="btn btn-outline-primary w-100" onclick="exportarJustificativas('csv')">Exportar Justificativas (CSV)</button>
+                    </div>
+                    <ul id="listaJustificativas" class="list-group text-start">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm p-3">
+                    <h5>Salas</h5>
+                    <canvas id="graficoSalas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-fixo" class="footer mt-auto p-4 text-white fw-bold text-center">©2026 Enzo Barbino. Todos os
+        direitos
+        reservados.</footer>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./JS/storage.js"></script>
+    <script src="./JS/rules.js"></script>
+    <script src="./JS/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>

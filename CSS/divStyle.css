@@ -1,0 +1,24 @@
+#header-fixo{
+    background-color: #0e3797;
+}
+
+#footer-fixo{
+    background-color: #0e3797;
+}
+
+#div-alunos{
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+}
+
+#div-salas{
+    background-color: #F1F5F9;
+}
+
+#div-chamada{
+    background-color: #F8F9FA;
+}
+
+#div-dashboard{
+    background-color: #F1F5F9;
+}
