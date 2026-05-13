@@ -136,6 +136,3 @@ function salvarDados(chave, dados) {
 ## Conclusão
 
 O sistema atende todos os requisitos, garantindo confiabilidade, histórico, relatórios precisos e interface amigável. As principais dificuldades foram resolvidas com validação forte, separação de responsabilidades e testes constantes.
-
----
-```
